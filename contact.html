@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact & Inquiry Form — GK CREATIONS · Sivakasi, India</title>
+  <meta name="description" content="Reach out directly to developer Gokul Kumar R at GK CREATIONS in Sivakasi, Tamil Nadu. Connect via WhatsApp (+91 7904303676) or send your project inquiry.">
+  
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='24' fill='%230B0D11'/%3E%3Cpath d='M30 32h40v12H44v12h22v10H44v14h-14z' fill='%2384CC16'/%3E%3Ccircle cx='74' cy='66' r='6' fill='%2384CC16'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Site Header -->
+  <header class="site-header">
+    <div class="container nav-container">
+      <a href="index.html" class="brand-logo">
+        <div class="brand-icon">
+          <span>GK</span>
+          <span class="brand-icon-dot"></span>
+        </div>
+        <div class="brand-text">
+          <span class="brand-name">
+            GK CREATIONS
+            <span class="brand-name-dot"></span>
+          </span>
+          <span class="brand-tagline">IT Company · Sivakasi</span>
+        </div>
+      </a>
+
+      <nav class="desktop-nav">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="services.html" class="nav-link">Services</a>
+        <a href="portfolio.html" class="nav-link">Portfolio</a>
+        <a href="pricing.html" class="nav-link">Pricing</a>
+        <a href="contact.html" class="nav-link active">Contact</a>
+      </nav>
+
+      <div class="header-actions">
+        <button onclick="openEstimator()" class="btn-estimate-pill">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#84CC16" stroke-width="2"><path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83"/></svg>
+          <span>Estimate Quote</span>
+        </button>
+        <a href="https://wa.me/917904303676" target="_blank" rel="noopener noreferrer" class="btn-whatsapp-pill">
+          <span>WhatsApp</span>
+        </a>
+        <button id="mobile-toggle" class="mobile-toggle-btn" aria-label="Toggle Navigation">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer -->
+  <div id="mobile-nav" class="mobile-nav-drawer">
+    <div class="mobile-links">
+      <div style="font-family: var(--font-mono); font-size: 0.6875rem; color: var(--text-muted); text-transform: uppercase; margin-bottom: 0.5rem;">Company Navigation</div>
+      <a href="index.html" class="mobile-nav-link">Home <span>→</span></a>
+      <a href="about.html" class="mobile-nav-link">About <span>→</span></a>
+      <a href="services.html" class="mobile-nav-link">Services <span>→</span></a>
+      <a href="portfolio.html" class="mobile-nav-link">Portfolio <span>→</span></a>
+      <a href="pricing.html" class="mobile-nav-link">Pricing <span>→</span></a>
+      <a href="contact.html" class="mobile-nav-link active">Contact <span>→</span></a>
+    </div>
+    <div class="mobile-footer">
+      <button onclick="openEstimator(); document.getElementById('mobile-nav').classList.remove('active');" class="btn btn-dark" style="width:100%; margin-bottom: 0.75rem;">Estimate Quote</button>
+      <a href="https://wa.me/917904303676" target="_blank" rel="noopener noreferrer" class="btn btn-primary" style="width:100%;">Direct WhatsApp Chat</a>
+    </div>
+  </div>
+
+  <main style="padding-top: 5rem;">
+    <!-- Contact Section -->
+    <section class="section">
+      <div class="container">
+        <div class="section-header">
+          <div>
+            <div class="badge">
+              <span class="badge-dot"></span>
+              <span>05 / Direct Access</span>
+            </div>
+            <h1 class="section-title">
+              Let's Build Something <br>
+              <span class="highlight-lime">Exceptional.</span>
+            </h1>
+          </div>
+          <p class="section-subtitle">
+            Have a project in mind or need an instant quotation? Reach out directly to Gokul Kumar R via WhatsApp, phone, or the inquiry form below.
+          </p>
+        </div>
+
+        <div class="contact-grid">
+          <!-- Left Column: Direct Coordinates -->
+          <div class="contact-info-card">
+            <div>
+              <span class="badge" style="margin-bottom: 0.5rem;">Direct Office Access</span>
+              <h3 style="font-family: var(--font-editorial); font-size: 1.85rem; font-weight: 800; color: var(--text-primary); margin-bottom: 0.25rem;">
+                GK Creations
+              </h3>
+              <p style="font-family: var(--font-mono); font-size: 0.75rem; color: var(--text-muted); font-weight: 600;">
+                Developer: Gokul Kumar R · Sivakasi
+              </p>
+            </div>
+
+            <!-- 1-Click WhatsApp Trigger -->
+            <a href="https://wa.me/917904303676" target="_blank" rel="noopener noreferrer" style="background-color: var(--accent-electric); color: var(--bg-dark); padding: 1.25rem; border-radius: var(--radius-xl); display: flex; align-items: center; justify-content: space-between; font-weight: 800; border: 1px solid rgba(132, 204, 22, 0.6); box-shadow: var(--shadow-md);">
+              <div style="display: flex; align-items: center; gap: 0.75rem;">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.312.045-.634.06-1.503-.306-.985-.415-1.748-1.28-1.89-1.468-.142-.188-.802-1.07-.802-2.041 0-.972.508-1.45.69-1.649.182-.198.397-.247.529-.247.133 0 .265.005.38.01.122.007.284-.047.444.337.164.396.56 1.365.61 1.465.05.101.083.218.016.351-.066.133-.1.216-.198.332-.099.116-.208.26-.297.35-.099.099-.202.207-.087.405.116.198.514.848 1.103 1.372.758.675 1.397.884 1.595.983.199.099.315.083.43-.05.116-.133.497-.579.629-.778.133-.199.265-.166.447-.099.182.066 1.157.546 1.356.645.199.099.331.149.38.232.05.083.05.479-.094.884z"/></svg>
+                <span>Direct WhatsApp Chat</span>
+              </div>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M7 17L17 7M17 7H7M17 7V17"/></svg>
+            </a>
+
+            <!-- Phone -->
+            <div class="info-item">
+              <div class="info-icon">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+              </div>
+              <div>
+                <span class="info-label">Direct Phone</span>
+                <a href="tel:+917904303676" class="info-val">+91 7904303676</a>
+              </div>
+            </div>
+
+            <!-- Email -->
+            <div class="info-item">
+              <div class="info-icon">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+              </div>
+              <div>
+                <span class="info-label">Direct Email</span>
+                <a href="mailto:gkcreations.rgk@gmail.com" class="info-val">gkcreations.rgk@gmail.com</a>
+              </div>
+            </div>
+
+            <!-- Location -->
+            <div class="info-item">
+              <div class="info-icon">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+              </div>
+              <div>
+                <span class="info-label">Office Location</span>
+                <span class="info-val">Sivakasi, Tamil Nadu, India</span>
+              </div>
+            </div>
+
+            <div style="padding: 1.25rem; border-radius: var(--radius-xl); background: var(--bg-secondary); border: 1px solid var(--border-light); font-size: 0.8125rem; color: var(--text-secondary); line-height: 1.6;">
+              <strong style="color: var(--text-primary);">Response Guarantee:</strong> Inquiries are answered directly by Gokul Kumar R within 2 to 4 hours on WhatsApp or phone.
+            </div>
+          </div>
+
+          <!-- Right Column: Interactive Inquiry Form -->
+          <div class="contact-form-card">
+            <h3 style="font-family: var(--font-editorial); font-size: 1.5rem; font-weight: 800; color: var(--text-primary); margin-bottom: 0.5rem;">
+              Send Project Brief
+            </h3>
+            <p style="font-size: 0.875rem; color: var(--text-secondary); margin-bottom: 1.5rem;">
+              Submit your inquiry and it will automatically generate a direct WhatsApp chat with your brief itemized.
+            </p>
+
+            <form id="it-contact-form">
+              <div class="form-group">
+                <label class="form-label">Your Name *</label>
+                <input type="text" name="name" class="form-control" placeholder="e.g. Anand Kumar" required>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label">Business / Brand Name</label>
+                <input type="text" name="businessName" class="form-control" placeholder="e.g. Sri Krishna Pyrotech">
+              </div>
+
+              <div class="form-group">
+                <label class="form-label">Phone Number (WhatsApp) *</label>
+                <input type="tel" name="phone" class="form-control" placeholder="e.g. +91 9876543210" required>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label">Service Required</label>
+                <select name="projectType" class="form-control">
+                  <option value="Crackers Website Development">Crackers Website Development (Sivakasi Special)</option>
+                  <option value="Single-Page Website (₹6,999)">Single-Page Website Package (₹6,999)</option>
+                  <option value="Multi-Page Website (₹16,999)">Multi-Page Website Package (₹16,999)</option>
+                  <option value="E-commerce Store">E-commerce Development</option>
+                  <option value="Logo & Visual Branding">Logo & Branding</option>
+                  <option value="Catalog Designing">Catalog Designing</option>
+                  <option value="QR Code Solution">QR Code Solution</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label">Project Details / Requirements</label>
+                <textarea name="message" class="form-control" placeholder="Briefly describe what you need (e.g., number of pages, Diwali price list calculator, domain registration, etc.)."></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-primary" style="width: 100%;">
+                <span>Submit Inquiry via WhatsApp →</span>
+              </button>
+            </form>
+          </div>
+        </div>
+
+        <!-- FAQ Section -->
+        <div style="margin-top: 4.5rem; background: var(--bg-secondary); border: 1px solid var(--border-light); border-radius: var(--radius-2xl); padding: 2.5rem;">
+          <h3 style="font-family: var(--font-editorial); font-size: 1.5rem; font-weight: 800; margin-bottom: 1.5rem;">Frequently Asked Questions</h3>
+          <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem;">
+            <div style="background:#fff; border:1px solid var(--border-light); padding:1.5rem; border-radius:var(--radius-xl);">
+              <span style="font-family:var(--font-mono); font-size:0.6875rem; color:var(--accent-dark); font-weight:700;">Q: TURNAROUND TIME</span>
+              <h4 style="font-size:0.9375rem; font-weight:800; margin:0.35rem 0;">How quickly can my website launch?</h4>
+              <p style="font-size:0.8125rem; color:var(--text-secondary); line-height:1.6;">Single-page landing pages are delivered within 3-5 days. Comprehensive multi-page corporate sites take 7-10 days.</p>
+            </div>
+            <div style="background:#fff; border:1px solid var(--border-light); padding:1.5rem; border-radius:var(--radius-xl);">
+              <span style="font-family:var(--font-mono); font-size:0.6875rem; color:var(--accent-dark); font-weight:700;">Q: HOSTING & MAINTENANCE</span>
+              <h4 style="font-size:0.9375rem; font-weight:800; margin:0.35rem 0;">Are there any monthly charges?</h4>
+              <p style="font-size:0.8125rem; color:var(--text-secondary); line-height:1.6;">No. We provide free hosting included as advertised with zero ongoing maintenance retainers. You only pay for annual domain renewals.</p>
+            </div>
+            <div style="background:#fff; border:1px solid var(--border-light); padding:1.5rem; border-radius:var(--radius-xl);">
+              <span style="font-family:var(--font-mono); font-size:0.6875rem; color:var(--accent-dark); font-weight:700;">Q: DIRECT COMMUNICATION</span>
+              <h4 style="font-size:0.9375rem; font-weight:800; margin:0.35rem 0;">Who manages my project?</h4>
+              <p style="font-size:0.8125rem; color:var(--text-secondary); line-height:1.6;">You work directly with lead developer Gokul Kumar R. WhatsApp messages and calls are answered directly by the creator of your website.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Site Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <a href="index.html" class="brand-logo" style="margin-bottom: 1.25rem;">
+            <div class="brand-icon">GK</div>
+            <div class="brand-text">
+              <span class="brand-name">GK CREATIONS</span>
+              <span class="brand-tagline">IT Company · Sivakasi</span>
+            </div>
+          </a>
+          <p style="font-size: 0.875rem; color: var(--text-secondary); line-height: 1.6; max-width: 22rem; margin-bottom: 1.25rem;">
+            Web development and IT solutions company in Sivakasi, Tamil Nadu. Building high-performance custom websites, e-commerce stores, and specialized crackers order systems for businesses that value quality and results.
+          </p>
+          <div style="font-family: var(--font-mono); font-size: 0.75rem; color: var(--text-muted);">
+            <div>Lead Developer: <strong style="color: var(--text-primary);">Gokul Kumar R</strong></div>
+            <div>Base: Sivakasi, Tamil Nadu, India</div>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title">Pages</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Company</a></li>
+            <li><a href="services.html">Capabilities (6)</a></li>
+            <li><a href="portfolio.html">Portfolio (32+)</a></li>
+            <li><a href="pricing.html">Pricing Packages</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title">Capabilities</h4>
+          <ul class="footer-links">
+            <li><a href="services.html">Website Development</a></li>
+            <li><a href="services.html">E-commerce Stores</a></li>
+            <li><a href="services.html">Crackers Web Portals</a></li>
+            <li><a href="services.html">Logo & Branding</a></li>
+            <li><a href="services.html">Catalog Designing</a></li>
+            <li><a href="services.html">QR Code Solutions</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title">Direct Coordinates</h4>
+          <ul class="footer-links" style="font-family: var(--font-mono); font-size: 0.8125rem;">
+            <li>Phone: <a href="tel:+917904303676" style="color:var(--text-primary); font-weight:700;">+91 7904303676</a></li>
+            <li>Email: <a href="mailto:gkcreations.rgk@gmail.com" style="color:var(--text-primary);">gkcreations.rgk@gmail.com</a></li>
+            <li>Location: Sivakasi, Tamil Nadu, India</li>
+            <li style="margin-top: 0.5rem;">
+              <a href="https://wa.me/917904303676" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-primary" style="margin-top:0.25rem;">Direct WhatsApp</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>© 2026 GK Creations. Designed & Developed by Gokul Kumar R. All Rights Reserved.</div>
+        <div>Sivakasi, Tamil Nadu · Web & IT Solutions</div>
+      </div>
+    </div>
+  </footer>
+
+  <a href="https://wa.me/917904303676" target="_blank" rel="noopener noreferrer" class="floating-whatsapp-btn" aria-label="Chat on WhatsApp">
+    <span class="radar-pulse"></span>
+    <span>WhatsApp Direct</span>
+  </a>
+
+  <!-- Project Details Modal -->
+  <div id="project-modal" class="modal-overlay">
+    <div class="modal-container">
+      <button onclick="closeProjectModal()" class="modal-close-btn">✕</button>
+      <div id="project-modal-content"></div>
+    </div>
+  </div>
+
+  <!-- Estimator Modal -->
+  <div id="estimator-modal" class="modal-overlay">
+    <div class="modal-container">
+      <button onclick="closeEstimator()" class="modal-close-btn">✕</button>
+      <div class="estimator-body">
+        <div style="margin-bottom: 1.5rem;">
+          <div class="badge"><span class="badge-dot"></span><span>Interactive Budget Estimator</span></div>
+          <h3 class="estimator-heading">Project Cost Calculator</h3>
+          <p style="font-size: 0.875rem; color: var(--text-secondary);">Customize your requirements to get an instant realistic estimate with zero hidden retainers.</p>
+        </div>
+        <div class="estimator-step">
+          <span class="step-label">1. Choose Base Foundation</span>
+          <div class="choice-grid">
+            <button type="button" class="pkg-choice-btn active" data-type="single" onclick="setPackageType('single')"><span class="choice-name">Single-Page Website</span><span class="choice-price">₹6,999 · 3-5 Days</span></button>
+            <button type="button" class="pkg-choice-btn" data-type="multi" onclick="setPackageType('multi')"><span class="choice-name">Multi-Page Website</span><span class="choice-price">₹16,999 · Up to 5 Pages</span></button>
+          </div>
+        </div>
+        <div id="extra-pages-wrap" class="estimator-step" style="display: none;">
+          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.5rem;">
+            <span class="step-label" style="margin: 0;">2. Number of Custom Pages</span>
+            <span id="extra-pages-val" style="font-family: var(--font-mono); font-size: 0.8125rem; font-weight: 700; color: var(--accent-dark);">5 Pages</span>
+          </div>
+          <input type="range" min="5" max="15" value="5" step="1" oninput="setExtraPages(this.value)" style="width: 100%; accent-color: var(--accent-lime);">
+        </div>
+        <div class="estimator-step">
+          <span class="step-label">3. Domain Selection (1 Year)</span>
+          <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 0.5rem;">
+            <button type="button" class="domain-choice-btn" data-domain="none" onclick="setDomainChoice('none')"><span class="choice-name">I Have Domain</span><span class="choice-price">₹0</span></button>
+            <button type="button" class="domain-choice-btn active" data-domain="in" onclick="setDomainChoice('in')"><span class="choice-name">.in Domain</span><span class="choice-price">₹900</span></button>
+            <button type="button" class="domain-choice-btn" data-domain="com" onclick="setDomainChoice('com')"><span class="choice-name">.com Domain</span><span class="choice-price">₹1,400</span></button>
+          </div>
+        </div>
+        <div class="estimator-step">
+          <span class="step-label">4. Specialized Capabilities & Add-ons</span>
+          <label class="checkbox-row"><input type="checkbox" onchange="toggleAddon(this, 'whatsappCheckout')"><span>WhatsApp Cart & Ordering Engine (+₹2,500)</span></label>
+          <label class="checkbox-row"><input type="checkbox" onchange="toggleAddon(this, 'logoBranding')"><span>Vector Logo & Brand Identity System (+₹3,000)</span></label>
+          <label class="checkbox-row"><input type="checkbox" onchange="toggleAddon(this, 'qrIntegration')"><span>Branded QR Code Physical Packaging Solution (+₹1,500)</span></label>
+          <label class="checkbox-row"><input type="checkbox" onchange="toggleAddon(this, 'seoAddon')"><span>Advanced Search Engine Optimization Setup (+₹2,000)</span></label>
+        </div>
+        <div class="estimator-total-box">
+          <div>
+            <div style="font-family: var(--font-mono); font-size: 0.6875rem; text-transform: uppercase; color: #cbd5e1;">Estimated Investment (Zero Retainers)</div>
+            <div id="estimator-total" class="total-amount">₹7,899</div>
+            <div style="font-size: 0.75rem; color: var(--accent-electric); margin-top: 0.25rem;">Includes Free Cloud Hosting as advertised</div>
+          </div>
+          <a id="estimator-whatsapp-btn" href="#" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+            <span>Send Quote to WhatsApp</span>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/projects.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

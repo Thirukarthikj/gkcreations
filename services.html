@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Services & Capabilities — GK CREATIONS · Sivakasi, India</title>
+  <meta name="description" content="Explore the six core digital disciplines of GK CREATIONS: Website Development, E-commerce, Crackers Web Portals, Logo & Branding, Catalog Design, and QR Code Solutions.">
+  
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='24' fill='%230B0D11'/%3E%3Cpath d='M30 32h40v12H44v12h22v10H44v14h-14z' fill='%2384CC16'/%3E%3Ccircle cx='74' cy='66' r='6' fill='%2384CC16'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Site Header -->
+  <header class="site-header">
+    <div class="container nav-container">
+      <a href="index.html" class="brand-logo">
+        <div class="brand-icon">
+          <span>GK</span>
+          <span class="brand-icon-dot"></span>
+        </div>
+        <div class="brand-text">
+          <span class="brand-name">
+            GK CREATIONS
+            <span class="brand-name-dot"></span>
+          </span>
+          <span class="brand-tagline">IT Company · Sivakasi</span>
+        </div>
+      </a>
+
+      <nav class="desktop-nav">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="services.html" class="nav-link active">Services</a>
+        <a href="portfolio.html" class="nav-link">Portfolio</a>
+        <a href="pricing.html" class="nav-link">Pricing</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </nav>
+
+      <div class="header-actions">
+        <button onclick="openEstimator()" class="btn-estimate-pill">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#84CC16" stroke-width="2"><path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83"/></svg>
+          <span>Estimate Quote</span>
+        </button>
+        <a href="https://wa.me/917904303676" target="_blank" rel="noopener noreferrer" class="btn-whatsapp-pill">
+          <span>WhatsApp</span>
+        </a>
+        <button id="mobile-toggle" class="mobile-toggle-btn" aria-label="Toggle Navigation">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer -->
+  <div id="mobile-nav" class="mobile-nav-drawer">
+    <div class="mobile-links">
+      <div style="font-family: var(--font-mono); font-size: 0.6875rem; color: var(--text-muted); text-transform: uppercase; margin-bottom: 0.5rem;">Company Navigation</div>
+      <a href="index.html" class="mobile-nav-link">Home <span>→</span></a>
+      <a href="about.html" class="mobile-nav-link">About <span>→</span></a>
+      <a href="services.html" class="mobile-nav-link active">Services <span>→</span></a>
+      <a href="portfolio.html" class="mobile-nav-link">Portfolio <span>→</span></a>
+      <a href="pricing.html" class="mobile-nav-link">Pricing <span>→</span></a>
+      <a href="contact.html" class="mobile-nav-link">Contact <span>→</span></a>
+    </div>
+    <div class="mobile-footer">
+      <button onclick="openEstimator(); document.getElementById('mobile-nav').classList.remove('active');" class="btn btn-dark" style="width:100%; margin-bottom: 0.75rem;">Estimate Quote</button>
+      <a href="https://wa.me/917904303676" target="_blank" rel="noopener noreferrer" class="btn btn-primary" style="width:100%;">Direct WhatsApp Chat</a>
+    </div>
+  </div>
+
+  <main style="padding-top: 5rem;">
+    <!-- Capabilities Section -->
+    <section class="section">
+      <div class="container">
+        <div class="section-header">
+          <div>
+            <div class="badge">
+              <span class="badge-dot"></span>
+              <span>02 / Capabilities</span>
+            </div>
+            <h1 class="section-title">
+              Six Specialized <br>
+              <span class="highlight-lime">Digital Disciplines.</span>
+            </h1>
+          </div>
+          <p class="section-subtitle">
+            From fast-loading corporate websites to complex seasonal crackers price calculators and branding systems—every discipline is executed with precision.
+          </p>
+        </div>
+
+        <div class="services-grid">
+          <!-- 1. Website Development -->
+          <div class="service-card">
+            <div>
+              <div class="service-card-top">
+                <span class="service-num">01 / CAPABILITY</span>
+                <div class="service-icon-box">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m18 16 4-4-4-4M6 8l-4 4 4 4m8.5-12-5 16"/></svg>
+                </div>
+              </div>
+              <div class="service-card-image">
+                <img src="https://images.unsplash.com/photo-1547658719-da2b51169166?q=80&w=800&auto=format&fit=crop" alt="Website Development">
+              </div>
+              <h3 class="service-title">Website Development</h3>
+              <div class="service-tagline">High-Performance Custom Digital Foundations</div>
+              <p class="service-desc">We engineer bespoke, fast-loading, and responsive websites designed to position your brand with authority. Built from scratch with clean code, modern frameworks, and laser-focused user experience that turns visitors into clients.</p>
+              
+              <ul class="service-features-list">
+                <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg> Clean Semantic Code & Mobile-First Architecture</li>
+                <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg> Ultra-Fast Loading Speeds & Core Web Vitals</li>
+                <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg> SEO Architecture & Social Metadata</li>
+                <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg> Direct WhatsApp Integration</li>
+              </ul>
+            </div>
+            <div class="service-card-footer">
+              <span style="font-family:var(--font-mono); font-size:0.6875rem; color:var(--text-muted);">Core IT Service</span>
+              <a href="https://wa.me/917904303676?text=Hello%20Gokul!%20I%20am%20inquiring%20about%20Website%20Development%20services." target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-primary">Inquire WhatsApp →</a>
+            </div>
+          </div>
+
+          <!-- 2. E-commerce Development -->
+          <div class="service-card">
+            <div>
+              <div class="service-card-top">
+                <span class="service-num">02 / CAPABILITY</span>
+                <div class="service-icon-box">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z"/><path d="M3 6h18"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
+                </div>
+              </div>
+              <div class="service-card-image">
+                <img src="https://images.unsplash.com/photo-1556742049-0a67c5574f73?q=80&w=800&auto=format&fit=crop" alt="E-Commerce Development">
+              </div>
+              <h3 class="service-title">E-commerce Development</h3>
+              <div class="service-tagline">Conversion-Focused Online Retail Engines</div>
+              <p class="service-desc">Turn your product catalog into a seamless 24/7 sales machine. We build intuitive online stores with categorized browsing, streamlined shopping carts, friction-free checkout flows, and automated WhatsApp order alerts.</p>
+              
+              <ul class="service-features-list">
+                <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg> Interactive Product Showcase & Live Filtering</li>
+                <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg> Dynamic Cart Summary & Instant Discount Engines</li>
+                <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg> Automated WhatsApp Order Confirmation</li>
+                <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg> Mobile-Optimized Fast Checkout</li>
+              </ul>
+            </div>
+            <div class="service-card-footer">
+              <span style="font-family:var(--font-mono); font-size:0.6875rem; color:var(--text-muted);">High Conversion</span>
+              <a href="https://wa.me/917904303676?text=Hello%20Gokul!%20I%20am%20inquiring%20about%20E-commerce%20Development%20services." target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-primary">Inquire WhatsApp →</a>
+            </div>
+          </div>
+
+          <!-- 3. Crackers Website Development -->
+          <div class="service-card border-beam" style="border: 2px solid var(--accent-lime); box-shadow: var(--shadow-md);">
+            <div>
+              <div class="service-card-top">
+                <span class="service-num">03 / SIVAKASI SPECIALTY</span>
+                <div class="service-icon-box" style="background-color: var(--accent-light);">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m12 3-1.912 5.813a2 2 0 0 1-1.275 1.275L3 12l5.813 1.912a2 2 0 0 1 1.275 1.275L12 21l1.912-5.813a2 2 0 0 1 1.275-1.275L21 12l-5.813-1.912a2 2 0 0 1-1.275-1.275L12 3Z"/></svg>
+                </div>
+              </div>
+              <div class="service-card-image">
+                <img src="https://images.unsplash.com/photo-1514565131-fce0801e5785?q=80&w=800&auto=format&fit=crop" alt="Crackers Website Development">
+              </div>
+              <h3 class="service-title">Crackers Website Development</h3>
+              <div class="service-tagline">Sivakasi Industry-Standard Pyrotechnic Portals</div>
+              <p class="service-desc">Specialized web solutions crafted specifically for Sivakasi's fireworks manufacturers and distributors. Engineered with custom price list calculators, minimum order estimations, festive peak traffic resilience, and downloadable PDF order sheets.</p>
+              
+              <ul class="service-features-list">
+                <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg> Dynamic Price List & Minimum Order Logic</li>
+                <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg> Seasonal Bulk Discount & Real-time Calculator</li>
+                <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg> Festive Peak Server Architecture (No Diwali Downtime)</li>
+                <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg> Itemized WhatsApp Cart Dispatch</li>
+              </ul>
+            </div>
+            <div class="service-card-footer">
+              <span style="font-family:var(--font-mono); font-size:0.6875rem; color:var(--accent-dark); font-weight:700;">Sivakasi Specialty</span>
+              <a href="https://wa.me/917904303676?text=Hello%20Gokul!%20I%20want%20to%20build%20a%20Fireworks%20Website%20for%20our%20Sivakasi%20business." target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-primary">Book Crackers Portal →</a>
+            </div>
+          </div>
+
+          <!-- 4. Logo & Branding -->
+          <div class="service-card">
+            <div>
+              <div class="service-card-top">
+                <span class="service-num">04 / CAPABILITY</span>
+                <div class="service-icon-box">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="13.5" cy="6.5" r=".5" fill="currentColor"/><circle cx="17.5" cy="10.5" r=".5" fill="currentColor"/><circle cx="8.5" cy="7.5" r=".5" fill="currentColor"/><circle cx="6.5" cy="12.5" r=".5" fill="currentColor"/><path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10c.926 0 1.648-.746 1.648-1.688 0-.437-.18-.835-.437-1.125-.29-.289-.438-.652-.438-1.125a1.64 1.64 0 0 1 1.668-1.668h1.996c3.051 0 5.563-2.512 5.563-5.563C22 6.5 17.5 2 12 2Z"/></svg>
+                </div>
+              </div>
+              <div class="service-card-image">
+                <img src="https://images.unsplash.com/photo-1600132806370-bf17e65e942f?q=80&w=800&auto=format&fit=crop" alt="Logo & Branding">
+              </div>
+              <h3 class="service-title">Logo & Branding</h3>
+              <div class="service-tagline">Memorable Visual Identity & Brand Systems</div>
+              <p class="service-desc">A distinctive brand identity commands instant respect and trust. We design bespoke logos, cohesive color systems, typographic hierarchies, and brand guideline assets that make your business instantly recognizable across print and digital media.</p>
+              
+              <ul class="service-features-list">
+                <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg> Original Vector Logo Marks & Wordmarks</li>
+                <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg> Color Palettes & Typographic Selection Guides</li>
+                <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg> High-Resolution Vector Assets (AI, SVG, PDF, PNG)</li>
+                <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg> Stationery & Business Card Ready Layouts</li>
+              </ul>
+            </div>
+            <div class="service-card-footer">
+              <span style="font-family:var(--font-mono); font-size:0.6875rem; color:var(--text-muted);">Creative Identity</span>
+              <a href="https://wa.me/917904303676?text=Hello%20Gokul!%20I%20am%20inquiring%20about%20Logo%20and%20Branding%20services." target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-primary">Inquire WhatsApp →</a>
+            </div>
+          </div>
+
+          <!-- 5. Catalog Designing -->
+          <div class="service-card">
+            <div>
+              <div class="service-card-top">
+                <span class="service-num">05 / CAPABILITY</span>
+                <div class="service-icon-box">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1-2.5-2.5Z"/><path d="M6 6h10M6 10h10"/></svg>
+                </div>
+              </div>
+              <div class="service-card-image">
+                <img src="https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?q=80&w=800&auto=format&fit=crop" alt="Catalog Designing">
+              </div>
+              <h3 class="service-title">Catalog Designing</h3>
+              <div class="service-tagline">Compelling Print & Digital Product Showcases</div>
+              <p class="service-desc">Showcase your products with editorial flair. We craft stunning digital PDF catalogs, interactive flipbooks, and commercial print-ready brochures that organize complex product lines into visually engaging, easy-to-read sales documents.</p>
+              
+              <ul class="service-features-list">
+                <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg> Structured Product Layouts & Clean Typography</li>
+                <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg> Clickable WhatsApp-Friendly Digital PDFs</li>
+                <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg> Offset Print-Ready Files with Bleeds (CMYK)</li>
+                <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg> Sivakasi Printing Standards Compliant</li>
+              </ul>
+            </div>
+            <div class="service-card-footer">
+              <span style="font-family:var(--font-mono); font-size:0.6875rem; color:var(--text-muted);">Sales Acceleration</span>
+              <a href="https://wa.me/917904303676?text=Hello%20Gokul!%20I%20am%20inquiring%20about%20Catalog%20Designing%20services." target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-primary">Inquire WhatsApp →</a>
+            </div>
+          </div>
+
+          <!-- 6. QR Code Solutions -->
+          <div class="service-card">
+            <div>
+              <div class="service-card-top">
+                <span class="service-num">06 / CAPABILITY</span>
+                <div class="service-icon-box">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect width="5" height="5" x="3" y="3" rx="1"/><rect width="5" height="5" x="16" y="3" rx="1"/><rect width="5" height="5" x="3" y="16" rx="1"/><path d="M21 16h-3a2 2 0 0 0-2 2v3M21 21v.01M12 7v3a2 2 0 0 1-2 2H7M3 12h.01M12 3h.01M12 16v.01M16 12h1M21 12v.01M12 21v-1"/></svg>
+                </div>
+              </div>
+              <div class="service-card-image">
+                <img src="https://images.unsplash.com/photo-1595079676339-1534801ad6cf?q=80&w=800&auto=format&fit=crop" alt="QR Code Solutions">
+              </div>
+              <h3 class="service-title">QR Code Solutions</h3>
+              <div class="service-tagline">Smart Physical-to-Digital Interactive Bridges</div>
+              <p class="service-desc">Connect your offline physical packaging, print catalogs, business cards, and display boards directly to digital actions. We deploy dynamic branded QR codes for instant digital catalogs, direct WhatsApp ordering, UPI payments, and Google Maps directions.</p>
+              
+              <ul class="service-features-list">
+                <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg> Custom Branded Vector QR with Embedded Logos</li>
+                <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg> Direct Menu & Product Catalog Redirection</li>
+                <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg> Instant WhatsApp Chat & Pre-Filled Prompts</li>
+                <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg> UPI Payment Integration for Boxes & Packaging</li>
+              </ul>
+            </div>
+            <div class="service-card-footer">
+              <span style="font-family:var(--font-mono); font-size:0.6875rem; color:var(--text-muted);">Smart Connectivity</span>
+              <a href="https://wa.me/917904303676?text=Hello%20Gokul!%20I%20am%20inquiring%20about%20QR%20Code%20Solutions." target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-primary">Inquire WhatsApp →</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Consultation Action Banner -->
+    <section class="section" style="padding-top: 0;">
+      <div class="container">
+        <div style="background-color: var(--bg-dark); color: #fff; border-radius: var(--radius-2xl); padding: 3rem; display: flex; flex-direction: column; gap: 2rem;" class="estimator-total-box">
+          <div>
+            <h2 style="font-family: var(--font-editorial); font-size: 2rem; font-weight: 800; margin-bottom: 0.5rem;">Need a customized technical solution for your industry?</h2>
+            <p style="color: #cbd5e1; font-size: 0.9375rem;">Calculate your investment instantly or connect with Gokul Kumar R over WhatsApp.</p>
+          </div>
+          <div style="display: flex; flex-wrap: wrap; gap: 1rem;">
+            <button onclick="openEstimator()" class="btn btn-primary">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83"/></svg>
+              <span>Estimate Project Quote</span>
+            </button>
+            <a href="contact.html" class="btn btn-secondary" style="background:transparent; color:#fff; border-color:rgba(255,255,255,0.25);">Get In Touch →</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Site Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <a href="index.html" class="brand-logo" style="margin-bottom: 1.25rem;">
+            <div class="brand-icon">GK</div>
+            <div class="brand-text">
+              <span class="brand-name">GK CREATIONS</span>
+              <span class="brand-tagline">IT Company · Sivakasi</span>
+            </div>
+          </a>
+          <p style="font-size: 0.875rem; color: var(--text-secondary); line-height: 1.6; max-width: 22rem; margin-bottom: 1.25rem;">
+            Web development and IT solutions company in Sivakasi, Tamil Nadu. Building high-performance custom websites, e-commerce stores, and specialized crackers order systems for businesses that value quality and results.
+          </p>
+          <div style="font-family: var(--font-mono); font-size: 0.75rem; color: var(--text-muted);">
+            <div>Lead Developer: <strong style="color: var(--text-primary);">Gokul Kumar R</strong></div>
+            <div>Base: Sivakasi, Tamil Nadu, India</div>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title">Pages</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Company</a></li>
+            <li><a href="services.html">Capabilities (6)</a></li>
+            <li><a href="portfolio.html">Portfolio (32+)</a></li>
+            <li><a href="pricing.html">Pricing Packages</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title">Capabilities</h4>
+          <ul class="footer-links">
+            <li><a href="services.html">Website Development</a></li>
+            <li><a href="services.html">E-commerce Stores</a></li>
+            <li><a href="services.html">Crackers Web Portals</a></li>
+            <li><a href="services.html">Logo & Branding</a></li>
+            <li><a href="services.html">Catalog Designing</a></li>
+            <li><a href="services.html">QR Code Solutions</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title">Direct Coordinates</h4>
+          <ul class="footer-links" style="font-family: var(--font-mono); font-size: 0.8125rem;">
+            <li>Phone: <a href="tel:+917904303676" style="color:var(--text-primary); font-weight:700;">+91 7904303676</a></li>
+            <li>Email: <a href="mailto:gkcreations.rgk@gmail.com" style="color:var(--text-primary);">gkcreations.rgk@gmail.com</a></li>
+            <li>Location: Sivakasi, Tamil Nadu, India</li>
+            <li style="margin-top: 0.5rem;">
+              <a href="https://wa.me/917904303676" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-primary" style="margin-top:0.25rem;">Direct WhatsApp</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>© 2026 GK Creations. Designed & Developed by Gokul Kumar R. All Rights Reserved.</div>
+        <div>Sivakasi, Tamil Nadu · Web & IT Solutions</div>
+      </div>
+    </div>
+  </footer>
+
+  <a href="https://wa.me/917904303676" target="_blank" rel="noopener noreferrer" class="floating-whatsapp-btn" aria-label="Chat on WhatsApp">
+    <span class="radar-pulse"></span>
+    <span>WhatsApp Direct</span>
+  </a>
+
+  <!-- Project Details Modal -->
+  <div id="project-modal" class="modal-overlay">
+    <div class="modal-container">
+      <button onclick="closeProjectModal()" class="modal-close-btn">✕</button>
+      <div id="project-modal-content"></div>
+    </div>
+  </div>
+
+  <!-- Estimator Modal -->
+  <div id="estimator-modal" class="modal-overlay">
+    <div class="modal-container">
+      <button onclick="closeEstimator()" class="modal-close-btn">✕</button>
+      <div class="estimator-body">
+        <div style="margin-bottom: 1.5rem;">
+          <div class="badge"><span class="badge-dot"></span><span>Interactive Budget Estimator</span></div>
+          <h3 class="estimator-heading">Project Cost Calculator</h3>
+          <p style="font-size: 0.875rem; color: var(--text-secondary);">Customize your requirements to get an instant realistic estimate with zero hidden retainers.</p>
+        </div>
+        <div class="estimator-step">
+          <span class="step-label">1. Choose Base Foundation</span>
+          <div class="choice-grid">
+            <button type="button" class="pkg-choice-btn active" data-type="single" onclick="setPackageType('single')"><span class="choice-name">Single-Page Website</span><span class="choice-price">₹6,999 · 3-5 Days</span></button>
+            <button type="button" class="pkg-choice-btn" data-type="multi" onclick="setPackageType('multi')"><span class="choice-name">Multi-Page Website</span><span class="choice-price">₹16,999 · Up to 5 Pages</span></button>
+          </div>
+        </div>
+        <div id="extra-pages-wrap" class="estimator-step" style="display: none;">
+          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.5rem;">
+            <span class="step-label" style="margin: 0;">2. Number of Custom Pages</span>
+            <span id="extra-pages-val" style="font-family: var(--font-mono); font-size: 0.8125rem; font-weight: 700; color: var(--accent-dark);">5 Pages</span>
+          </div>
+          <input type="range" min="5" max="15" value="5" step="1" oninput="setExtraPages(this.value)" style="width: 100%; accent-color: var(--accent-lime);">
+        </div>
+        <div class="estimator-step">
+          <span class="step-label">3. Domain Selection (1 Year)</span>
+          <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 0.5rem;">
+            <button type="button" class="domain-choice-btn" data-domain="none" onclick="setDomainChoice('none')"><span class="choice-name">I Have Domain</span><span class="choice-price">₹0</span></button>
+            <button type="button" class="domain-choice-btn active" data-domain="in" onclick="setDomainChoice('in')"><span class="choice-name">.in Domain</span><span class="choice-price">₹900</span></button>
+            <button type="button" class="domain-choice-btn" data-domain="com" onclick="setDomainChoice('com')"><span class="choice-name">.com Domain</span><span class="choice-price">₹1,400</span></button>
+          </div>
+        </div>
+        <div class="estimator-step">
+          <span class="step-label">4. Specialized Capabilities & Add-ons</span>
+          <label class="checkbox-row"><input type="checkbox" onchange="toggleAddon(this, 'whatsappCheckout')"><span>WhatsApp Cart & Ordering Engine (+₹2,500)</span></label>
+          <label class="checkbox-row"><input type="checkbox" onchange="toggleAddon(this, 'logoBranding')"><span>Vector Logo & Brand Identity System (+₹3,000)</span></label>
+          <label class="checkbox-row"><input type="checkbox" onchange="toggleAddon(this, 'qrIntegration')"><span>Branded QR Code Physical Packaging Solution (+₹1,500)</span></label>
+          <label class="checkbox-row"><input type="checkbox" onchange="toggleAddon(this, 'seoAddon')"><span>Advanced Search Engine Optimization Setup (+₹2,000)</span></label>
+        </div>
+        <div class="estimator-total-box">
+          <div>
+            <div style="font-family: var(--font-mono); font-size: 0.6875rem; text-transform: uppercase; color: #cbd5e1;">Estimated Investment (Zero Retainers)</div>
+            <div id="estimator-total" class="total-amount">₹7,899</div>
+            <div style="font-size: 0.75rem; color: var(--accent-electric); margin-top: 0.25rem;">Includes Free Cloud Hosting as advertised</div>
+          </div>
+          <a id="estimator-whatsapp-btn" href="#" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+            <span>Send Quote to WhatsApp</span>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/projects.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

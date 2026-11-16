@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About GK CREATIONS — Web Development & IT Solutions · Sivakasi, India</title>
+  <meta name="description" content="Learn about GK CREATIONS, an IT solutions and web engineering company based in Sivakasi, Tamil Nadu, led by developer Gokul Kumar R.">
+  
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='24' fill='%230B0D11'/%3E%3Cpath d='M30 32h40v12H44v12h22v10H44v14h-14z' fill='%2384CC16'/%3E%3Ccircle cx='74' cy='66' r='6' fill='%2384CC16'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Site Header -->
+  <header class="site-header">
+    <div class="container nav-container">
+      <a href="index.html" class="brand-logo">
+        <div class="brand-icon">
+          <span>GK</span>
+          <span class="brand-icon-dot"></span>
+        </div>
+        <div class="brand-text">
+          <span class="brand-name">
+            GK CREATIONS
+            <span class="brand-name-dot"></span>
+          </span>
+          <span class="brand-tagline">IT Company · Sivakasi</span>
+        </div>
+      </a>
+
+      <nav class="desktop-nav">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="about.html" class="nav-link active">About</a>
+        <a href="services.html" class="nav-link">Services</a>
+        <a href="portfolio.html" class="nav-link">Portfolio</a>
+        <a href="pricing.html" class="nav-link">Pricing</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </nav>
+
+      <div class="header-actions">
+        <button onclick="openEstimator()" class="btn-estimate-pill">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#84CC16" stroke-width="2"><path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83"/></svg>
+          <span>Estimate Quote</span>
+        </button>
+        <a href="https://wa.me/917904303676" target="_blank" rel="noopener noreferrer" class="btn-whatsapp-pill">
+          <span>WhatsApp</span>
+        </a>
+        <button id="mobile-toggle" class="mobile-toggle-btn" aria-label="Toggle Navigation">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer -->
+  <div id="mobile-nav" class="mobile-nav-drawer">
+    <div class="mobile-links">
+      <div style="font-family: var(--font-mono); font-size: 0.6875rem; color: var(--text-muted); text-transform: uppercase; margin-bottom: 0.5rem;">Company Navigation</div>
+      <a href="index.html" class="mobile-nav-link">Home <span>→</span></a>
+      <a href="about.html" class="mobile-nav-link active">About <span>→</span></a>
+      <a href="services.html" class="mobile-nav-link">Services <span>→</span></a>
+      <a href="portfolio.html" class="mobile-nav-link">Portfolio <span>→</span></a>
+      <a href="pricing.html" class="mobile-nav-link">Pricing <span>→</span></a>
+      <a href="contact.html" class="mobile-nav-link">Contact <span>→</span></a>
+    </div>
+    <div class="mobile-footer">
+      <button onclick="openEstimator(); document.getElementById('mobile-nav').classList.remove('active');" class="btn btn-dark" style="width:100%; margin-bottom: 0.75rem;">Estimate Quote</button>
+      <a href="https://wa.me/917904303676" target="_blank" rel="noopener noreferrer" class="btn btn-primary" style="width:100%;">Direct WhatsApp Chat</a>
+    </div>
+  </div>
+
+  <!-- Main About Content -->
+  <main style="padding-top: 5rem;">
+    <!-- Profile & Heritage -->
+    <section class="section">
+      <div class="container">
+        <div class="section-header">
+          <div>
+            <div class="badge">
+              <span class="badge-dot"></span>
+              <span>01 / Company Profile</span>
+            </div>
+            <h1 class="section-title">
+              Bespoke Web Craftsmanship, <br>
+              <span class="highlight-lime">Rooted in Sivakasi.</span>
+            </h1>
+          </div>
+          <p class="section-subtitle">
+            Led by developer <strong>Gokul Kumar R</strong>, GK Creations bridges authentic local commercial power with cutting-edge global web standards and software precision.
+          </p>
+        </div>
+
+        <div style="display: grid; grid-template-columns: 1fr; gap: 2.5rem; align-items: start;" class="hero-grid">
+          <!-- Story & Ethos -->
+          <div style="display: flex; flex-direction: column; gap: 1.5rem;">
+            <div style="background:#fff; border:1px solid var(--border-light); border-radius:var(--radius-2xl); padding:2.25rem; box-shadow:var(--shadow-sm);">
+              <h3 style="font-family: var(--font-editorial); font-size: 1.65rem; font-weight: 800; color: var(--text-primary); margin-bottom: 1rem;">
+                We believe your business deserves more than an ordinary template.
+              </h3>
+              <div style="color: var(--text-secondary); font-size: 0.9375rem; line-height: 1.7; display: flex; flex-direction: column; gap: 1rem;">
+                <p>
+                  Most business websites today look identical: generic WordPress themes bloated with 40 plugins, sluggish page speeds, and disconnected stock photography. At <strong>GK Creations</strong>, every website is engineered as a tailored digital asset.
+                </p>
+                <p>
+                  Based in <strong>Sivakasi, Tamil Nadu</strong>—famed worldwide for printing mastery, pyrotechnics, and packaging industries—we build digital systems that cater precisely to high-volume commercial needs. Whether you need a lightning-fast single-page showcase, an international export gateway, or a seasonal fireworks order portal with instant WhatsApp bill estimation, we design solutions that perform reliably under pressure.
+                </p>
+                <p>
+                  When you partner with GK Creations, you collaborate directly with the developer. No middlemen, no agency account reps, no vague promises—just transparent craftsmanship, clear pricing, and enduring results.
+                </p>
+              </div>
+
+              <!-- Developer Card -->
+              <div style="margin-top: 2rem; padding-top: 1.5rem; border-top: 1px solid var(--border-light); display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 1rem;">
+                <div style="display: flex; align-items: center; gap: 0.75rem;">
+                  <div style="width: 3rem; height: 3rem; border-radius: var(--radius-lg); background: var(--bg-dark); color: #fff; display: flex; align-items: center; justify-content: center; font-family: var(--font-editorial); font-weight: 900;">GK</div>
+                  <div>
+                    <h4 style="font-weight: 800; font-size: 1rem; color: var(--text-primary);">Gokul Kumar R</h4>
+                    <p style="font-family: var(--font-mono); font-size: 0.6875rem; color: var(--text-muted);">Lead Developer & IT Solutions Specialist · Sivakasi</p>
+                  </div>
+                </div>
+                <a href="https://wa.me/917904303676" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-primary">
+                  <span>Connect Direct</span>
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H7M17 7V17"/></svg>
+                </a>
+              </div>
+            </div>
+
+            <!-- Core Principles Grid -->
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 1rem;">
+              <div style="padding: 1.25rem; border-radius: var(--radius-xl); background: #fff; border: 1px solid var(--border-light); display: flex; gap: 0.75rem;">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#84CC16" stroke-width="2.5" style="flex-shrink:0;"><path d="M20 6L9 17l-5-5"/></svg>
+                <p style="font-size: 0.8125rem; font-weight: 600; color: var(--text-primary); line-height: 1.5;">Direct Developer Craft — No middlemen, no agency telephone games.</p>
+              </div>
+              <div style="padding: 1.25rem; border-radius: var(--radius-xl); background: #fff; border: 1px solid var(--border-light); display: flex; gap: 0.75rem;">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#84CC16" stroke-width="2.5" style="flex-shrink:0;"><path d="M20 6L9 17l-5-5"/></svg>
+                <p style="font-size: 0.8125rem; font-weight: 600; color: var(--text-primary); line-height: 1.5;">Bespoke Engineering — Custom-designed interfaces tailored to your actual business goals.</p>
+              </div>
+              <div style="padding: 1.25rem; border-radius: var(--radius-xl); background: #fff; border: 1px solid var(--border-light); display: flex; gap: 0.75rem;">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#84CC16" stroke-width="2.5" style="flex-shrink:0;"><path d="M20 6L9 17l-5-5"/></svg>
+                <p style="font-size: 0.8125rem; font-weight: 600; color: var(--text-primary); line-height: 1.5;">Sivakasi Industry Deep Expertise — Pyrotechnics, printing, packaging & export specialist.</p>
+              </div>
+              <div style="padding: 1.25rem; border-radius: var(--radius-xl); background: #fff; border: 1px solid var(--border-light); display: flex; gap: 0.75rem;">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#84CC16" stroke-width="2.5" style="flex-shrink:0;"><path d="M20 6L9 17l-5-5"/></svg>
+                <p style="font-size: 0.8125rem; font-weight: 600; color: var(--text-primary); line-height: 1.5;">Transparent Pricing — Guaranteed no hidden maintenance costs and free hosting.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Imagery & Verified Metrics -->
+          <div style="display: flex; flex-direction: column; gap: 1.5rem;">
+            <div style="border-radius: var(--radius-2xl); overflow: hidden; border: 1px solid var(--border-light); box-shadow: var(--shadow-sm); background: #fff;">
+              <div style="position: relative; height: 220px;">
+                <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=800&auto=format&fit=crop" alt="Web Development Desk" style="width:100%; height:100%; object-fit:cover;">
+                <div style="position: absolute; inset: 0; background: linear-gradient(to top, rgba(15,23,42,0.85), transparent); display: flex; flex-direction: column; justify-content: flex-end; padding: 1.5rem; color: #fff;">
+                  <span style="font-family: var(--font-mono); font-size: 0.625rem; font-weight: 700; text-transform: uppercase; color: var(--accent-electric);">High Performance Engineering</span>
+                  <div style="font-family: var(--font-editorial); font-size: 1.125rem; font-weight: 800;">100% Custom Code · No Bloatware</div>
+                </div>
+              </div>
+              <div style="padding: 1.5rem;">
+                <span style="display: block; font-family: var(--font-mono); font-size: 0.6875rem; text-transform: uppercase; color: var(--text-muted); font-weight: 700; margin-bottom: 1rem;">Verified Company Metrics</span>
+                <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 0.75rem;">
+                  <div style="background: var(--bg-secondary); border: 1px solid var(--border-light); border-radius: var(--radius-lg); padding: 1rem;">
+                    <div style="font-family: var(--font-editorial); font-size: 2rem; font-weight: 900; line-height: 1;" data-counter="32" data-suffix="+">32+</div>
+                    <div style="font-size: 0.75rem; font-weight: 700; color: var(--accent-dark); margin-top: 0.25rem;">Delivered Projects</div>
+                    <div style="font-size: 0.625rem; color: var(--text-muted);">Across 4 Industries</div>
+                  </div>
+                  <div style="background: var(--bg-secondary); border: 1px solid var(--border-light); border-radius: var(--radius-lg); padding: 1rem;">
+                    <div style="font-family: var(--font-editorial); font-size: 2rem; font-weight: 900; line-height: 1;" data-counter="6" data-suffix="+">6+</div>
+                    <div style="font-size: 0.75rem; font-weight: 700; color: var(--accent-dark); margin-top: 0.25rem;">Core Disciplines</div>
+                    <div style="font-size: 0.625rem; color: var(--text-muted);">Web & Digital Brand</div>
+                  </div>
+                  <div style="background: var(--bg-secondary); border: 1px solid var(--border-light); border-radius: var(--radius-lg); padding: 1rem;">
+                    <div style="font-family: var(--font-editorial); font-size: 2rem; font-weight: 900; line-height: 1;" data-counter="100" data-suffix="%">100%</div>
+                    <div style="font-size: 0.75rem; font-weight: 700; color: var(--accent-dark); margin-top: 0.25rem;">Custom Code</div>
+                    <div style="font-size: 0.625rem; color: var(--text-muted);">Speed Optimized</div>
+                  </div>
+                  <div style="background: var(--bg-secondary); border: 1px solid var(--border-light); border-radius: var(--radius-lg); padding: 1rem;">
+                    <div style="font-family: var(--font-editorial); font-size: 2rem; font-weight: 900; line-height: 1;" data-counter="0" data-prefix="₹">₹0</div>
+                    <div style="font-size: 0.75rem; font-weight: 700; color: var(--accent-dark); margin-top: 0.25rem;">Hidden Fees</div>
+                    <div style="font-size: 0.625rem; color: var(--text-muted);">Free Hosting Included</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Regional Hub -->
+            <div style="background:#fff; border:1px solid var(--border-light); border-radius:var(--radius-2xl); padding:1.5rem; box-shadow:var(--shadow-sm);">
+              <div style="display: flex; align-items: center; gap: 0.5rem; font-family: var(--font-mono); font-size: 0.6875rem; color: var(--accent-dark); font-weight: 700; text-transform: uppercase;">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+                <span>Strategic Regional Hub</span>
+              </div>
+              <h4 style="font-family: var(--font-editorial); font-size: 1.125rem; font-weight: 800; margin: 0.5rem 0 0.25rem;">Proudly Sivakasi Native & Globally Ready</h4>
+              <p style="font-size: 0.8125rem; color: var(--text-secondary); line-height: 1.6;">
+                Headquartered in Sivakasi, Tamil Nadu—serving leading local manufacturers, exporters across India, and international trading enterprises.
+              </p>
+              <div style="margin-top: 1rem; padding-top: 0.75rem; border-top: 1px solid var(--border-light); display: flex; justify-content: space-between; font-family: var(--font-mono); font-size: 0.6875rem; color: var(--text-muted);">
+                <span>Timezone: IST (UTC+5:30)</span>
+                <span style="font-weight: 700; color: var(--text-primary);">Phone: +91 7904303676</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Why Partner With Us -->
+    <section class="section section-bg-alt">
+      <div class="container">
+        <div class="section-header">
+          <div>
+            <div class="badge">
+              <span class="badge-dot"></span>
+              <span>Why Choose Us</span>
+            </div>
+            <h2 class="section-title">
+              Built on Direct Craft, <br>
+              <span class="highlight-lime">Not Middlemen.</span>
+            </h2>
+          </div>
+          <p class="section-subtitle">
+            We operate differently from bloated agencies. Here is how our direct development model gives your business a distinct technical and commercial advantage.
+          </p>
+        </div>
+
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem; margin-bottom: 3.5rem;">
+          <div class="service-card">
+            <div>
+              <div style="font-family: var(--font-mono); font-size: 0.6875rem; color: var(--accent-dark); font-weight: 700; margin-bottom: 0.5rem;">01 / ADVANTAGE</div>
+              <h3 style="font-family: var(--font-editorial); font-size: 1.25rem; font-weight: 800; margin-bottom: 0.5rem;">Direct Developer Collaboration</h3>
+              <p style="font-size: 0.8125rem; color: var(--text-secondary); line-height: 1.6;">You work directly with Gokul Kumar R from first concept to final launch. No account managers, no communication delays, and no misinterpretations of your requirements.</p>
+            </div>
+            <div style="margin-top: 1.5rem; padding-top: 1rem; border-top: 1px solid var(--border-light); font-family: var(--font-mono); font-size: 0.6875rem; color: var(--accent-dark); font-weight: 700;">Standard Company Guarantee</div>
+          </div>
+
+          <div class="service-card">
+            <div>
+              <div style="font-family: var(--font-mono); font-size: 0.6875rem; color: var(--accent-dark); font-weight: 700; margin-bottom: 0.5rem;">02 / ADVANTAGE</div>
+              <h3 style="font-family: var(--font-editorial); font-size: 1.25rem; font-weight: 800; margin-bottom: 0.5rem;">Sivakasi Industry Specialist</h3>
+              <p style="font-size: 0.8125rem; color: var(--text-secondary); line-height: 1.6;">Deep native understanding of Sivakasi's unique commerce ecosystem: fireworks manufacturing & price lists, offset printing & pre-press, corrugated packaging, and agricultural export.</p>
+            </div>
+            <div style="margin-top: 1.5rem; padding-top: 1rem; border-top: 1px solid var(--border-light); font-family: var(--font-mono); font-size: 0.6875rem; color: var(--accent-dark); font-weight: 700;">Standard Company Guarantee</div>
+          </div>
+
+          <div class="service-card">
+            <div>
+              <div style="font-family: var(--font-mono); font-size: 0.6875rem; color: var(--accent-dark); font-weight: 700; margin-bottom: 0.5rem;">03 / ADVANTAGE</div>
+              <h3 style="font-family: var(--font-editorial); font-size: 1.25rem; font-weight: 800; margin-bottom: 0.5rem;">High-Speed Custom Craft</h3>
+              <p style="font-size: 0.8125rem; color: var(--text-secondary); line-height: 1.6;">Every site is tailored from scratch with clean code rather than slow, vulnerable template bloat. Enjoy sub-second loading, great Core Web Vitals, and effortless mobile browsing.</p>
+            </div>
+            <div style="margin-top: 1.5rem; padding-top: 1rem; border-top: 1px solid var(--border-light); font-family: var(--font-mono); font-size: 0.6875rem; color: var(--accent-dark); font-weight: 700;">Standard Company Guarantee</div>
+          </div>
+
+          <div class="service-card">
+            <div>
+              <div style="font-family: var(--font-mono); font-size: 0.6875rem; color: var(--accent-dark); font-weight: 700; margin-bottom: 0.5rem;">04 / ADVANTAGE</div>
+              <h3 style="font-family: var(--font-editorial); font-size: 1.25rem; font-weight: 800; margin-bottom: 0.5rem;">Honest Zero Hidden Cost Policy</h3>
+              <p style="font-size: 0.8125rem; color: var(--text-secondary); line-height: 1.6;">No surprise recurring maintenance fees and free hosting as advertised. We believe in building lasting business relationships rooted in transparent, straightforward pricing.</p>
+            </div>
+            <div style="margin-top: 1.5rem; padding-top: 1rem; border-top: 1px solid var(--border-light); font-family: var(--font-mono); font-size: 0.6875rem; color: var(--accent-dark); font-weight: 700;">Standard Company Guarantee</div>
+          </div>
+
+          <div class="service-card">
+            <div>
+              <div style="font-family: var(--font-mono); font-size: 0.6875rem; color: var(--accent-dark); font-weight: 700; margin-bottom: 0.5rem;">05 / ADVANTAGE</div>
+              <h3 style="font-family: var(--font-editorial); font-size: 1.25rem; font-weight: 800; margin-bottom: 0.5rem;">WhatsApp-First Indian Commerce</h3>
+              <p style="font-size: 0.8125rem; color: var(--text-secondary); line-height: 1.6;">Your customers prefer WhatsApp. We build direct WhatsApp quotation generators, product carts, and inquiry triggers so potential buyers connect with you in a single tap.</p>
+            </div>
+            <div style="margin-top: 1.5rem; padding-top: 1rem; border-top: 1px solid var(--border-light); font-family: var(--font-mono); font-size: 0.6875rem; color: var(--accent-dark); font-weight: 700;">Standard Company Guarantee</div>
+          </div>
+
+          <div class="service-card">
+            <div>
+              <div style="font-family: var(--font-mono); font-size: 0.6875rem; color: var(--accent-dark); font-weight: 700; margin-bottom: 0.5rem;">06 / ADVANTAGE</div>
+              <h3 style="font-family: var(--font-editorial); font-size: 1.25rem; font-weight: 800; margin-bottom: 0.5rem;">Rapid & Reliable Turnaround</h3>
+              <p style="font-size: 0.8125rem; color: var(--text-secondary); line-height: 1.6;">Fast single-page sites ready in 3-5 days; comprehensive multi-page corporate sites in 7-10 days. Dependable delivery schedules you can plan your business around.</p>
+            </div>
+            <div style="margin-top: 1.5rem; padding-top: 1rem; border-top: 1px solid var(--border-light); font-family: var(--font-mono); font-size: 0.6875rem; color: var(--accent-dark); font-weight: 700;">Standard Company Guarantee</div>
+          </div>
+        </div>
+
+        <!-- Comparison Matrix Table -->
+        <div class="comparison-table-wrapper">
+          <div style="font-family: var(--font-mono); font-size: 0.75rem; font-weight: 700; color: var(--text-muted); text-transform: uppercase; margin-bottom: 1rem;">
+            GK Creations IT Solutions vs. Typical Agency
+          </div>
+          <table class="comparison-table">
+            <thead>
+              <tr>
+                <th>Dimension</th>
+                <th>Typical Agency</th>
+                <th class="col-gk">GK Creations</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>Point of Contact</strong></td>
+                <td>Junior Account Rep / Middleman</td>
+                <td style="color: var(--accent-dark); font-weight: 700;">✓ Direct Developer (Gokul Kumar R)</td>
+              </tr>
+              <tr>
+                <td><strong>Code Architecture</strong></td>
+                <td>Heavy WordPress with 40+ plugins</td>
+                <td style="color: var(--accent-dark); font-weight: 700;">✓ 100% Bespoke Code (Clean & Fast)</td>
+              </tr>
+              <tr>
+                <td><strong>Hosting & Retainers</strong></td>
+                <td>Monthly ₹2,000 - ₹5,000 retainer fee</td>
+                <td style="color: var(--accent-dark); font-weight: 700;">✓ Free Hosting Included · ₹0 Maintenance</td>
+              </tr>
+              <tr>
+                <td><strong>Diwali Festive Traffic</strong></td>
+                <td>Slow servers crash under seasonal spikes</td>
+                <td style="color: var(--accent-dark); font-weight: 700;">✓ High-Concurrency Ready (Zero Downtime)</td>
+              </tr>
+              <tr>
+                <td><strong>Pricing Clarity</strong></td>
+                <td>Vague quotes with surprise invoices</td>
+                <td style="color: var(--accent-dark); font-weight: 700;">✓ ₹6,999 & ₹16,999 Fixed Packages</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- Bottom CTA -->
+    <section class="section">
+      <div class="container">
+        <div style="background-color: var(--bg-dark); color: #fff; border-radius: var(--radius-2xl); padding: 3rem; display: flex; flex-direction: column; gap: 2rem;" class="estimator-total-box">
+          <div>
+            <h2 style="font-family: var(--font-editorial); font-size: 2rem; font-weight: 800; margin-bottom: 0.5rem;">Ready to collaborate directly with the developer?</h2>
+            <p style="color: #cbd5e1; font-size: 0.9375rem;">No account managers or junior reps—work with Gokul Kumar R from start to finish.</p>
+          </div>
+          <div style="display: flex; flex-wrap: wrap; gap: 1rem;">
+            <a href="contact.html" class="btn btn-primary">Start Project Inquiry →</a>
+            <a href="https://wa.me/917904303676" target="_blank" rel="noopener noreferrer" class="btn btn-secondary" style="background:transparent; color:#fff; border-color:rgba(255,255,255,0.25);">Chat on WhatsApp</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Site Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <a href="index.html" class="brand-logo" style="margin-bottom: 1.25rem;">
+            <div class="brand-icon">GK</div>
+            <div class="brand-text">
+              <span class="brand-name">GK CREATIONS</span>
+              <span class="brand-tagline">IT Company · Sivakasi</span>
+            </div>
+          </a>
+          <p style="font-size: 0.875rem; color: var(--text-secondary); line-height: 1.6; max-width: 22rem; margin-bottom: 1.25rem;">
+            Web development and IT solutions company in Sivakasi, Tamil Nadu. Building high-performance custom websites, e-commerce stores, and specialized crackers order systems for businesses that value quality and results.
+          </p>
+          <div style="font-family: var(--font-mono); font-size: 0.75rem; color: var(--text-muted);">
+            <div>Lead Developer: <strong style="color: var(--text-primary);">Gokul Kumar R</strong></div>
+            <div>Base: Sivakasi, Tamil Nadu, India</div>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title">Pages</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Company</a></li>
+            <li><a href="services.html">Capabilities (6)</a></li>
+            <li><a href="portfolio.html">Portfolio (32+)</a></li>
+            <li><a href="pricing.html">Pricing Packages</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title">Capabilities</h4>
+          <ul class="footer-links">
+            <li><a href="services.html">Website Development</a></li>
+            <li><a href="services.html">E-commerce Stores</a></li>
+            <li><a href="services.html">Crackers Web Portals</a></li>
+            <li><a href="services.html">Logo & Branding</a></li>
+            <li><a href="services.html">Catalog Designing</a></li>
+            <li><a href="services.html">QR Code Solutions</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title">Direct Coordinates</h4>
+          <ul class="footer-links" style="font-family: var(--font-mono); font-size: 0.8125rem;">
+            <li>Phone: <a href="tel:+917904303676" style="color:var(--text-primary); font-weight:700;">+91 7904303676</a></li>
+            <li>Email: <a href="mailto:gkcreations.rgk@gmail.com" style="color:var(--text-primary);">gkcreations.rgk@gmail.com</a></li>
+            <li>Location: Sivakasi, Tamil Nadu, India</li>
+            <li style="margin-top: 0.5rem;">
+              <a href="https://wa.me/917904303676" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-primary" style="margin-top:0.25rem;">Direct WhatsApp</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>© 2026 GK Creations. Designed & Developed by Gokul Kumar R. All Rights Reserved.</div>
+        <div>Sivakasi, Tamil Nadu · Web & IT Solutions</div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating WhatsApp CTA Button -->
+  <a href="https://wa.me/917904303676" target="_blank" rel="noopener noreferrer" class="floating-whatsapp-btn" aria-label="Chat on WhatsApp">
+    <span class="radar-pulse"></span>
+    <span>WhatsApp Direct</span>
+  </a>
+
+  <!-- Project Details Modal -->
+  <div id="project-modal" class="modal-overlay">
+    <div class="modal-container">
+      <button onclick="closeProjectModal()" class="modal-close-btn" aria-label="Close modal">✕</button>
+      <div id="project-modal-content"></div>
+    </div>
+  </div>
+
+  <!-- Cost Estimator Modal -->
+  <div id="estimator-modal" class="modal-overlay">
+    <div class="modal-container">
+      <button onclick="closeEstimator()" class="modal-close-btn" aria-label="Close modal">✕</button>
+      <div class="estimator-body">
+        <div style="margin-bottom: 1.5rem;">
+          <div class="badge"><span class="badge-dot"></span><span>Interactive Budget Estimator</span></div>
+          <h3 class="estimator-heading">Project Cost Calculator</h3>
+          <p style="font-size: 0.875rem; color: var(--text-secondary);">Customize your requirements to get an instant realistic estimate with zero hidden retainers.</p>
+        </div>
+        <div class="estimator-step">
+          <span class="step-label">1. Choose Base Foundation</span>
+          <div class="choice-grid">
+            <button type="button" class="pkg-choice-btn active" data-type="single" onclick="setPackageType('single')">
+              <span class="choice-name">Single-Page Website</span>
+              <span class="choice-price">₹6,999 · 3-5 Days</span>
+            </button>
+            <button type="button" class="pkg-choice-btn" data-type="multi" onclick="setPackageType('multi')">
+              <span class="choice-name">Multi-Page Website</span>
+              <span class="choice-price">₹16,999 · Up to 5 Pages</span>
+            </button>
+          </div>
+        </div>
+        <div id="extra-pages-wrap" class="estimator-step" style="display: none;">
+          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.5rem;">
+            <span class="step-label" style="margin: 0;">2. Number of Custom Pages</span>
+            <span id="extra-pages-val" style="font-family: var(--font-mono); font-size: 0.8125rem; font-weight: 700; color: var(--accent-dark);">5 Pages</span>
+          </div>
+          <input type="range" min="5" max="15" value="5" step="1" oninput="setExtraPages(this.value)" style="width: 100%; accent-color: var(--accent-lime);">
+        </div>
+        <div class="estimator-step">
+          <span class="step-label">3. Domain Selection (1 Year)</span>
+          <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 0.5rem;">
+            <button type="button" class="domain-choice-btn" data-domain="none" onclick="setDomainChoice('none')"><span class="choice-name">I Have Domain</span><span class="choice-price">₹0</span></button>
+            <button type="button" class="domain-choice-btn active" data-domain="in" onclick="setDomainChoice('in')"><span class="choice-name">.in Domain</span><span class="choice-price">₹900</span></button>
+            <button type="button" class="domain-choice-btn" data-domain="com" onclick="setDomainChoice('com')"><span class="choice-name">.com Domain</span><span class="choice-price">₹1,400</span></button>
+          </div>
+        </div>
+        <div class="estimator-step">
+          <span class="step-label">4. Specialized Capabilities & Add-ons</span>
+          <label class="checkbox-row"><input type="checkbox" onchange="toggleAddon(this, 'whatsappCheckout')"><span>WhatsApp Cart & Ordering Engine (+₹2,500)</span></label>
+          <label class="checkbox-row"><input type="checkbox" onchange="toggleAddon(this, 'logoBranding')"><span>Vector Logo & Brand Identity System (+₹3,000)</span></label>
+          <label class="checkbox-row"><input type="checkbox" onchange="toggleAddon(this, 'qrIntegration')"><span>Branded QR Code Physical Packaging Solution (+₹1,500)</span></label>
+          <label class="checkbox-row"><input type="checkbox" onchange="toggleAddon(this, 'seoAddon')"><span>Advanced Search Engine Optimization Setup (+₹2,000)</span></label>
+        </div>
+        <div class="estimator-total-box">
+          <div>
+            <div style="font-family: var(--font-mono); font-size: 0.6875rem; text-transform: uppercase; color: #cbd5e1;">Estimated Investment (Zero Retainers)</div>
+            <div id="estimator-total" class="total-amount">₹7,899</div>
+            <div style="font-size: 0.75rem; color: var(--accent-electric); margin-top: 0.25rem;">Includes Free Cloud Hosting as advertised</div>
+          </div>
+          <a id="estimator-whatsapp-btn" href="#" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+            <span>Send Quote to WhatsApp</span>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/projects.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

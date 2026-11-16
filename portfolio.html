@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Client Portfolio Archive (32+ Projects) — GK CREATIONS · Sivakasi, India</title>
+  <meta name="description" content="Explore 32+ delivered projects by GK CREATIONS across Fireworks & Crackers, Business & Industrial, and Print & Retail sectors.">
+  
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='24' fill='%230B0D11'/%3E%3Cpath d='M30 32h40v12H44v12h22v10H44v14h-14z' fill='%2384CC16'/%3E%3Ccircle cx='74' cy='66' r='6' fill='%2384CC16'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Site Header -->
+  <header class="site-header">
+    <div class="container nav-container">
+      <a href="index.html" class="brand-logo">
+        <div class="brand-icon">
+          <span>GK</span>
+          <span class="brand-icon-dot"></span>
+        </div>
+        <div class="brand-text">
+          <span class="brand-name">
+            GK CREATIONS
+            <span class="brand-name-dot"></span>
+          </span>
+          <span class="brand-tagline">IT Company · Sivakasi</span>
+        </div>
+      </a>
+
+      <nav class="desktop-nav">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="services.html" class="nav-link">Services</a>
+        <a href="portfolio.html" class="nav-link active">Portfolio</a>
+        <a href="pricing.html" class="nav-link">Pricing</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </nav>
+
+      <div class="header-actions">
+        <button onclick="openEstimator()" class="btn-estimate-pill">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#84CC16" stroke-width="2"><path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83"/></svg>
+          <span>Estimate Quote</span>
+        </button>
+        <a href="https://wa.me/917904303676" target="_blank" rel="noopener noreferrer" class="btn-whatsapp-pill">
+          <span>WhatsApp</span>
+        </a>
+        <button id="mobile-toggle" class="mobile-toggle-btn" aria-label="Toggle Navigation">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer -->
+  <div id="mobile-nav" class="mobile-nav-drawer">
+    <div class="mobile-links">
+      <div style="font-family: var(--font-mono); font-size: 0.6875rem; color: var(--text-muted); text-transform: uppercase; margin-bottom: 0.5rem;">Company Navigation</div>
+      <a href="index.html" class="mobile-nav-link">Home <span>→</span></a>
+      <a href="about.html" class="mobile-nav-link">About <span>→</span></a>
+      <a href="services.html" class="mobile-nav-link">Services <span>→</span></a>
+      <a href="portfolio.html" class="mobile-nav-link active">Portfolio <span>→</span></a>
+      <a href="pricing.html" class="mobile-nav-link">Pricing <span>→</span></a>
+      <a href="contact.html" class="mobile-nav-link">Contact <span>→</span></a>
+    </div>
+    <div class="mobile-footer">
+      <button onclick="openEstimator(); document.getElementById('mobile-nav').classList.remove('active');" class="btn btn-dark" style="width:100%; margin-bottom: 0.75rem;">Estimate Quote</button>
+      <a href="https://wa.me/917904303676" target="_blank" rel="noopener noreferrer" class="btn btn-primary" style="width:100%;">Direct WhatsApp Chat</a>
+    </div>
+  </div>
+
+  <main style="padding-top: 5rem;">
+    <!-- Portfolio Archive Section -->
+    <section class="section">
+      <div class="container">
+        <div class="section-header">
+          <div>
+            <div class="badge">
+              <span class="badge-dot"></span>
+              <span>03 / Selected Archive</span>
+            </div>
+            <h1 class="section-title">
+              Featured Client <br>
+              <span class="highlight-lime">Project Portfolio.</span>
+            </h1>
+          </div>
+          <p class="section-subtitle">
+            Explore 32+ verified client productions across Sivakasi fireworks manufacturers, global exporters, pharmaceutical brands, and creative printing presses.
+          </p>
+        </div>
+
+        <!-- Filter & Search Controls -->
+        <div class="portfolio-controls">
+          <div class="filter-pills-wrap">
+            <button class="filter-pill active" data-cat="all" onclick="filterCategory('all')">All Projects (32)</button>
+            <button class="filter-pill" data-cat="fireworks" onclick="filterCategory('fireworks')">Fireworks & Crackers (13)</button>
+            <button class="filter-pill" data-cat="business" onclick="filterCategory('business')">Business & Industrial (9)</button>
+            <button class="filter-pill" data-cat="other" onclick="filterCategory('other')">Print, Pharma & Retail (10)</button>
+          </div>
+
+          <div class="search-box">
+            <svg class="search-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
+            <input type="text" class="search-input" placeholder="Search projects by name, tag, or scope..." oninput="handleSearch(this.value)">
+          </div>
+        </div>
+
+        <!-- Dynamic Grid Container -->
+        <div id="portfolio-grid" class="portfolio-grid"></div>
+
+        <!-- Bottom CTA -->
+        <div style="margin-top: 4.5rem; background-color: var(--bg-dark); color: #fff; border-radius: var(--radius-2xl); padding: 3rem; display: flex; flex-direction: column; gap: 2rem;" class="estimator-total-box">
+          <div>
+            <h2 style="font-family: var(--font-editorial); font-size: 2rem; font-weight: 800; margin-bottom: 0.5rem;">Like what you see in our archive?</h2>
+            <p style="color: #cbd5e1; font-size: 0.9375rem;">Let's create a tailored digital presence for your company with zero hidden retainers and free hosting.</p>
+          </div>
+          <div style="display: flex; flex-wrap: wrap; gap: 1rem;">
+            <a href="contact.html" class="btn btn-primary">Start Project Inquiry →</a>
+            <a href="https://wa.me/917904303676" target="_blank" rel="noopener noreferrer" class="btn btn-secondary" style="background:transparent; color:#fff; border-color:rgba(255,255,255,0.25);">WhatsApp Direct</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Site Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <a href="index.html" class="brand-logo" style="margin-bottom: 1.25rem;">
+            <div class="brand-icon">GK</div>
+            <div class="brand-text">
+              <span class="brand-name">GK CREATIONS</span>
+              <span class="brand-tagline">IT Company · Sivakasi</span>
+            </div>
+          </a>
+          <p style="font-size: 0.875rem; color: var(--text-secondary); line-height: 1.6; max-width: 22rem; margin-bottom: 1.25rem;">
+            Web development and IT solutions company in Sivakasi, Tamil Nadu. Building high-performance custom websites, e-commerce stores, and specialized crackers order systems for businesses that value quality and results.
+          </p>
+          <div style="font-family: var(--font-mono); font-size: 0.75rem; color: var(--text-muted);">
+            <div>Lead Developer: <strong style="color: var(--text-primary);">Gokul Kumar R</strong></div>
+            <div>Base: Sivakasi, Tamil Nadu, India</div>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title">Pages</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Company</a></li>
+            <li><a href="services.html">Capabilities (6)</a></li>
+            <li><a href="portfolio.html">Portfolio (32+)</a></li>
+            <li><a href="pricing.html">Pricing Packages</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title">Capabilities</h4>
+          <ul class="footer-links">
+            <li><a href="services.html">Website Development</a></li>
+            <li><a href="services.html">E-commerce Stores</a></li>
+            <li><a href="services.html">Crackers Web Portals</a></li>
+            <li><a href="services.html">Logo & Branding</a></li>
+            <li><a href="services.html">Catalog Designing</a></li>
+            <li><a href="services.html">QR Code Solutions</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title">Direct Coordinates</h4>
+          <ul class="footer-links" style="font-family: var(--font-mono); font-size: 0.8125rem;">
+            <li>Phone: <a href="tel:+917904303676" style="color:var(--text-primary); font-weight:700;">+91 7904303676</a></li>
+            <li>Email: <a href="mailto:gkcreations.rgk@gmail.com" style="color:var(--text-primary);">gkcreations.rgk@gmail.com</a></li>
+            <li>Location: Sivakasi, Tamil Nadu, India</li>
+            <li style="margin-top: 0.5rem;">
+              <a href="https://wa.me/917904303676" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-primary" style="margin-top:0.25rem;">Direct WhatsApp</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>© 2026 GK Creations. Designed & Developed by Gokul Kumar R. All Rights Reserved.</div>
+        <div>Sivakasi, Tamil Nadu · Web & IT Solutions</div>
+      </div>
+    </div>
+  </footer>
+
+  <a href="https://wa.me/917904303676" target="_blank" rel="noopener noreferrer" class="floating-whatsapp-btn" aria-label="Chat on WhatsApp">
+    <span class="radar-pulse"></span>
+    <span>WhatsApp Direct</span>
+  </a>
+
+  <!-- Project Details Modal -->
+  <div id="project-modal" class="modal-overlay">
+    <div class="modal-container">
+      <button onclick="closeProjectModal()" class="modal-close-btn">✕</button>
+      <div id="project-modal-content"></div>
+    </div>
+  </div>
+
+  <!-- Estimator Modal -->
+  <div id="estimator-modal" class="modal-overlay">
+    <div class="modal-container">
+      <button onclick="closeEstimator()" class="modal-close-btn">✕</button>
+      <div class="estimator-body">
+        <div style="margin-bottom: 1.5rem;">
+          <div class="badge"><span class="badge-dot"></span><span>Interactive Budget Estimator</span></div>
+          <h3 class="estimator-heading">Project Cost Calculator</h3>
+          <p style="font-size: 0.875rem; color: var(--text-secondary);">Customize your requirements to get an instant realistic estimate with zero hidden retainers.</p>
+        </div>
+        <div class="estimator-step">
+          <span class="step-label">1. Choose Base Foundation</span>
+          <div class="choice-grid">
+            <button type="button" class="pkg-choice-btn active" data-type="single" onclick="setPackageType('single')"><span class="choice-name">Single-Page Website</span><span class="choice-price">₹6,999 · 3-5 Days</span></button>
+            <button type="button" class="pkg-choice-btn" data-type="multi" onclick="setPackageType('multi')"><span class="choice-name">Multi-Page Website</span><span class="choice-price">₹16,999 · Up to 5 Pages</span></button>
+          </div>
+        </div>
+        <div id="extra-pages-wrap" class="estimator-step" style="display: none;">
+          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.5rem;">
+            <span class="step-label" style="margin: 0;">2. Number of Custom Pages</span>
+            <span id="extra-pages-val" style="font-family: var(--font-mono); font-size: 0.8125rem; font-weight: 700; color: var(--accent-dark);">5 Pages</span>
+          </div>
+          <input type="range" min="5" max="15" value="5" step="1" oninput="setExtraPages(this.value)" style="width: 100%; accent-color: var(--accent-lime);">
+        </div>
+        <div class="estimator-step">
+          <span class="step-label">3. Domain Selection (1 Year)</span>
+          <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 0.5rem;">
+            <button type="button" class="domain-choice-btn" data-domain="none" onclick="setDomainChoice('none')"><span class="choice-name">I Have Domain</span><span class="choice-price">₹0</span></button>
+            <button type="button" class="domain-choice-btn active" data-domain="in" onclick="setDomainChoice('in')"><span class="choice-name">.in Domain</span><span class="choice-price">₹900</span></button>
+            <button type="button" class="domain-choice-btn" data-domain="com" onclick="setDomainChoice('com')"><span class="choice-name">.com Domain</span><span class="choice-price">₹1,400</span></button>
+          </div>
+        </div>
+        <div class="estimator-step">
+          <span class="step-label">4. Specialized Capabilities & Add-ons</span>
+          <label class="checkbox-row"><input type="checkbox" onchange="toggleAddon(this, 'whatsappCheckout')"><span>WhatsApp Cart & Ordering Engine (+₹2,500)</span></label>
+          <label class="checkbox-row"><input type="checkbox" onchange="toggleAddon(this, 'logoBranding')"><span>Vector Logo & Brand Identity System (+₹3,000)</span></label>
+          <label class="checkbox-row"><input type="checkbox" onchange="toggleAddon(this, 'qrIntegration')"><span>Branded QR Code Physical Packaging Solution (+₹1,500)</span></label>
+          <label class="checkbox-row"><input type="checkbox" onchange="toggleAddon(this, 'seoAddon')"><span>Advanced Search Engine Optimization Setup (+₹2,000)</span></label>
+        </div>
+        <div class="estimator-total-box">
+          <div>
+            <div style="font-family: var(--font-mono); font-size: 0.6875rem; text-transform: uppercase; color: #cbd5e1;">Estimated Investment (Zero Retainers)</div>
+            <div id="estimator-total" class="total-amount">₹7,899</div>
+            <div style="font-size: 0.75rem; color: var(--accent-electric); margin-top: 0.25rem;">Includes Free Cloud Hosting as advertised</div>
+          </div>
+          <a id="estimator-whatsapp-btn" href="#" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+            <span>Send Quote to WhatsApp</span>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/projects.js"></script>
+  <script src="js/main.js"></script>
+  <script>
+    // Initial render of all 32 projects in the portfolio archive
+    renderPortfolioGrid('portfolio-grid');
+  </script>
+</body>
+</html>
